@@ -1,6 +1,6 @@
 "use client"; // Add this line
 
-import { HeroParallax } from '@/components/ui/hero-parallax';
+import { HeroParallax } from '../../components/ui/hero-parallax';
 import React, { useState, useEffect } from 'react';
 const products = [
   {

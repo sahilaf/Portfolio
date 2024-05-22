@@ -18,7 +18,7 @@ const Photo = () => {
     className="absolute inset-0"
   >
     <Image
-      src="/assets/Photo.png"
+      src="./assets/Photo.png"
       priority
       quality={100}
       fill
