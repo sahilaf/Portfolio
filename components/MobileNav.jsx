@@ -19,7 +19,7 @@ const MobileNav = () => {
         },
         {
             name:"blogs",
-            path:"/work"
+            path:"/blogs"
         },
         {
             name:"contact",
