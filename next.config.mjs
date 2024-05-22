@@ -6,7 +6,7 @@ const nextConfig = {
 
     },
     output:'export',
-    distDir:'dist'
+    distDir:'out',
   };
   
   export default nextConfig;
