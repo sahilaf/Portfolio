@@ -22,12 +22,12 @@ const Home = () => {
               <a
                 href="/Sahil_cv.pdf"
                 download
-                className="uppercase flex items-center gap-2 hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                className=""
               >
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center gap-2"
+                  className="uppercase flex items-center gap-2 hover:bg-accent hover:text-primary hover:transition-all duration-500"
                 >
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
