@@ -20,7 +20,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="/sahil_cv.pdf"
+                href="/Portfolio/sahil_cv.pdf"
                 download
                 className=""
               >
