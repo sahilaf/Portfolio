@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Sahil Al Farib",
-  description: "I’m Sahil, a passionate software developer with expertise in crafting efficient and innovative solutions. With a strong foundation in HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, Node.js, C, C++, and Java, I specialize in developing robust applications that meet client needs and exceed expectations. Explore my projects to see how I turn complex problems into elegant software solutions. Let's build something amazing together!",
+  description: "I’m Sahil, a passionate software developer with expertise in crafting efficient and innovative solutions.",
 };
 
 export default function RootLayout({ children }) {
