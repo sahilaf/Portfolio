@@ -14,6 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Sahil Al Farib",
   description: "I’m Sahil, a passionate software developer with expertise in crafting efficient and innovative solutions.",
+  image: "/opengraph-image.png",
+  url: "https://yourwebsite.com"
 };
 
 export default function RootLayout({ children }) {
