@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Sahil Al Farib",
-  description: "I’m Sahil, a passionate software developer with expertise in crafting efficient and innovative solutions.",
+  description: "Passionate software developer crafting efficient and innovative solutions. Explore my portfolio, showcasing expertise in web development, cutting-edge technologies, and creative problem-solving.",
   image: "/opengraph-image.png",
   url: "https://sahilalfarib.tech"
 };
@@ -22,14 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta property="og:title" content="Sahil Al Farib" />
-        <meta property="og:description" content="I’m Sahil, a passionate software developer with expertise in crafting efficient and innovative solutions." />
         <meta property="og:image" content="/opengraph-image.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sahilalfarib.tech" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
