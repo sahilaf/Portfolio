@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content="I’m Sahil, a passionate software developer with expertise in crafting efficient and innovative solutions." />
         <meta property="og:image" content="/opengraph-image.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sahilalfarib.com" />
+        <meta property="og:url" content="https://sahilalfarib.tech" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
