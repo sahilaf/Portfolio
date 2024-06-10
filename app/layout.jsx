@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Sahil Al Farib",
   description: "Passionate software developer crafting efficient and innovative solutions. Explore my portfolio, showcasing expertise in web development, cutting-edge technologies, and creative problem-solving.",
-  image: "/opengraph-image.png",
+  image: "https://sahilalfarib.tech/opengraph-image.png",  // Absolute URL
   url: "https://sahilalfarib.tech"
 };
 
@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="/opengraph-image.png" />
+        <meta property="og:image" content="https://sahilalfarib.tech/opengraph-image.png" /> {/* Absolute URL */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sahilalfarib.tech" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
+        <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" type="image/x-icon" sizes="48x48" /> {/* Absolute URL */}
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
