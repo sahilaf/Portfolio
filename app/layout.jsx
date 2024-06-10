@@ -22,6 +22,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta property="og:title" content="Sahil Al Farib" /> {/* Absolute URL */}
+        <meta property="og:description" content="Passionate software developer crafting efficient and innovative solutions. Explore my portfolio, showcasing expertise in web development, cutting-edge technologies, and creative problem-solving." />
         <meta property="og:image" content="https://sahilalfarib.tech/opengraph-image.png" /> {/* Absolute URL */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sahilalfarib.tech" />
