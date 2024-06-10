@@ -1,6 +1,6 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "../components/Header";
 import PageTransition from "../components/PageTransition";
 import StairEffect from "../components/StairEffect";
@@ -28,6 +28,9 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sahilalfarib.tech" />
         <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" type="image/x-icon" sizes="48x48" /> {/* Absolute URL */}
+        <link rel="icon" href="https://sahilalfarib.tech/favicon-192x192.png" sizes="192x192" /> {/* Android Chrome icon */}
+        <link rel="icon" href="https://sahilalfarib.tech/favicon-128x128.png" sizes="128x128" /> {/* Android Chrome fallback icon */}
+        <link rel="apple-touch-icon" href="https://sahilalfarib.tech/apple-touch-icon.png" /> {/* iOS Apple Touch Icon */}
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
