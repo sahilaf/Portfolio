@@ -31,6 +31,15 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" sizes="192x192" /> {/* Android Chrome icon */}
         <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" sizes="128x128" /> {/* Android Chrome fallback icon */}
         <link rel="apple-touch-icon" href="https://sahilalfarib.tech/favicon.ico" /> {/* iOS Apple Touch Icon */}
+        <link rel="video" href="https://sahilalfarib.tech/videos/feature-1.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/feature-2.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/feature-3.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/feature-4.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/feature-5.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/hero-1.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/hero-2.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/hero-3.mp4" />
+        <link rel="video" href="https://sahilalfarib.tech/videos/hero-4.mp4" />
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
