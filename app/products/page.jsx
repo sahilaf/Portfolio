@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Tabs from "./ui/tabs";
+import Tabs from "../../components/ui/tabs";
 import { Orbitron } from "next/font/google";
 import "./styles_proj.css";
 const orbitron = Orbitron({
