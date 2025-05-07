@@ -1,8 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { Tabs } from "../../components/ui/tabs";
+import { delay, motion } from "framer-motion";
+import  Tabs  from "../../components/ui/tabs";
 import { Orbitron } from "next/font/google";
 import "./styles_proj.css";
 const orbitron = Orbitron({
@@ -185,7 +185,7 @@ const Projects = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.2
       },
     },
   };
@@ -195,13 +195,13 @@ const Projects = () => {
       ref={sectionRef}
       className="w-full min-h-screen bg-primary px-4 relative overflow-hidden line__container"
     >
-      <div className="max-w-7xl mx-auto z-10 pt-20">
+      <div className="max-w-7xl mx-auto z-10 ">
         <div className="mb-8 sm:mb-12 md:mb-16 relative z-10">
           <div className="flex flex-col items-center justify-center text-center space-y-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5 ,delay: 1.2}}
               className={orbitron.className}
             >
               <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-white tracking-wider mt-10">

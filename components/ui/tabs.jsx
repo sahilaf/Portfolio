@@ -1,43 +1,101 @@
-"use client"
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
-import * as React from "react"
-import * as TabsPrimitive from "@radix-ui/react-tabs"
+const Tabs = ({
+  tabs,
+  activeTab,
+  setActiveTab,
+  containerClassName,
+  tabClassName,
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+        containerClassName
+      )}
+    >
+      {tabs.map((tab, index) => (
+        <button
+          key={tab.id}
+          onClick={() => setActiveTab(tab.id)}
+          className={cn(
+            "relative px-4 py-2 rounded-full",
+            "cursor-pointer transition-all duration-500",
+            activeTab === tab.id
+              ? "text-white"
+              : "hover:text-neutral-300 text-neutral-500",
+            tabClassName
+          )}
+          style={{
+            transformStyle: "preserve-3d",
+          }}
+        >
+          {activeTab === tab.id && (
+            <motion.div
+              layoutId="pill-tab"
+              transition={{ type: "spring", duration: 0.5 }}
+              className="absolute inset-0 bg-neutral-800 rounded-full"
+              style={{ transformStyle: "preserve-3d" }}
+            />
+          )}
+          <span className="relative block">{tab.label}</span>
+        </button>
+      ))}
+    </div>
+  );
+};
 
-import { cn } from "@/lib/utils"
+export const TabsDemo = () => {
+  const tabs = [
+    {
+      id: "world",
+      label: "World",
+    },
+    {
+      id: "ny",
+      label: "New York",
+    },
+    {
+      id: "business",
+      label: "Business",
+    },
+    {
+      id: "arts",
+      label: "Arts",
+    },
+    {
+      id: "science",
+      label: "Science",
+    },
+  ];
 
-const Tabs = TabsPrimitive.Root
+  const [activeTab, setActiveTab] = React.useState(tabs[0].id);
 
-const TabsList = React.forwardRef(({ className, ...props }, ref) => (
-  <TabsPrimitive.List
-    ref={ref}
-    className={cn(
-      "inline-flex h-auto rounded-md p-1 text-primary",
-      className
-    )}
-    {...props} />
-))
-TabsList.displayName = TabsPrimitive.List.displayName
+  return (
+    <div className="flex flex-col max-w-3xl mx-auto">
+      <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <div className="mt-8">
+        {activeTab === "world" && (
+          <div className="text-white">World Content</div>
+        )}
+        {activeTab === "ny" && (
+          <div className="text-white">New York Content</div>
+        )}
+        {activeTab === "business" && (
+          <div className="text-white">Business Content</div>
+        )}
+        {activeTab === "arts" && (
+          <div className="text-white">Arts Content</div>
+        )}
+        {activeTab === "science" && (
+          <div className="text-white">Science Content</div>
+        )}
+      </div>
+    </div>
+  );
+};
 
-const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
-  <TabsPrimitive.Trigger
-    ref={ref}
-    className={cn(
-      "inline-flex items-center w-full bg-[#27272c] justify-center whitespace-nowrap text-white rounded-lg p-3 text-base font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font:bold data-[state=active]:shadow-sm",
-      className
-    )}
-    {...props} />
-))
-TabsTrigger.displayName = TabsPrimitive.Trigger.displayName
-
-const TabsContent = React.forwardRef(({ className, ...props }, ref) => (
-  <TabsPrimitive.Content
-    ref={ref}
-    className={cn(
-      "min-h-[480px] ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300",
-      className
-    )}
-    {...props} />
-))
-TabsContent.displayName = TabsPrimitive.Content.displayName
-
-export { Tabs, TabsList, TabsTrigger, TabsContent }
+export default Tabs; 
