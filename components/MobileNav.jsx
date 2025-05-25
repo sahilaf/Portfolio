@@ -14,12 +14,8 @@ const MobileNav = () => {
             path:"/products"
         },
         {
-            name:"resume",
-            path:"/resume"
-        },
-        {
-            name:"blogs",
-            path:"/blogs"
+            name:"about",
+            path:"/about"
         },
         {
             name:"contact",

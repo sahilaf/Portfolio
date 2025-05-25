@@ -12,8 +12,8 @@ const links = [
     path: "/products",
   },
   {
-    name: "blogs",
-    path: "/blogs",
+    name: "about",
+    path: "/about",
   },
 ];
 const Nav = () => {

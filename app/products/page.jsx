@@ -1,10 +1,11 @@
 "use client";
 import React, { useRef } from "react";
 import Link from "next/link";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import  Tabs  from "../../components/ui/tabs";
 import { Orbitron } from "next/font/google";
 import "./styles_proj.css";
+
 const orbitron = Orbitron({
   weight: "400",
   subsets: ["latin"],
@@ -191,25 +192,25 @@ const Projects = () => {
   };
 
   return (
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+        transition: {
+          delay:2,
+          duration: 0.4,
+          ease: "easeIn",
+        },
+      }}
+      >
     <section
       ref={sectionRef}
-      className="w-full min-h-screen bg-primary px-4 relative overflow-hidden line__container"
+      className="w-full min-h-screen bg-primary px-4 relative overflow-hidden line__container py-5"
     >
       <div className="max-w-7xl mx-auto z-10 ">
-        <div className="mb-8 sm:mb-12 md:mb-16 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center space-y-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 ,delay: 1.2}}
-              className={orbitron.className}
-            >
-              <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-white tracking-wider mt-10">
-                Projects
-              </h2>
-            </motion.div>
-          </div>
-        </div>
+        
 
         <div className="overflow-x-auto -mx-4 px-4 mb-8 sm:mb-12 md:mb-16">
           <Tabs
@@ -277,6 +278,7 @@ const Projects = () => {
         </motion.div>
       </div>
     </section>
+    </motion.div>
   );
 };
 
