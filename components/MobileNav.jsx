@@ -10,8 +10,8 @@ const MobileNav = () => {
             path:"/"
         },
         {
-            name:"products",
-            path:"/products"
+            name:"projects",
+            path:"/projects"
         },
         {
             name:"about",
