@@ -13,9 +13,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Sahil Al Farib",
-  description: "Passionate software developer crafting efficient and innovative solutions. Explore my portfolio, showcasing expertise in web development, cutting-edge technologies, and creative problem-solving.",
-  image: "https://sahilalfarib.tech/opengraph-image.png",  // Absolute URL
-  url: "https://sahilalfarib.tech"
+  description: "Passionate software developer crafting efficient and innovative solutions. Explore my portfolio, showcasing expertise in web development, cutting-edge menologies, and creative problem-solving.",
+  image: "https://sahilalfarib.me/opengraph-image.png",  // Absolute URL
+  url: "https://sahilalfarib.me"
 };
 
 export default function RootLayout({ children }) {
@@ -23,23 +23,23 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta property="og:title" content="Sahil Al Farib" /> {/* Absolute URL */}
-        <meta property="og:description" content="Passionate AI/ML and Full-Stack Developer dedicated to building intelligent, scalable, and impactful solutions. Explore my portfolio to see my expertise in artificial intelligence, machine learning, and modern full-stack web development — where innovative thinking meets technical excellence." />
-        <meta property="og:image" content="https://sahilalfarib.tech/opengraph-image.png" /> {/* Absolute URL */}
+        <meta property="og:description" content="Passionate AI/ML and Full-Stack Developer dedicated to building intelligent, scalable, and impactful solutions. Explore my portfolio to see my expertise in artificial intelligence, machine learning, and modern full-stack web development — where innovative thinking meets menical excellence." />
+        <meta property="og:image" content="https://sahilalfarib.me/opengraph-image.png" /> {/* Absolute URL */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sahilalfarib.tech" />
-        <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" type="image/x-icon" sizes="48x48" /> {/* Absolute URL */}
-        <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" sizes="192x192" /> {/* Android Chrome icon */}
-        <link rel="icon" href="https://sahilalfarib.tech/favicon.ico" sizes="128x128" /> {/* Android Chrome fallback icon */}
-        <link rel="apple-touch-icon" href="https://sahilalfarib.tech/favicon.ico" /> {/* iOS Apple Touch Icon */}
-        <link rel="video" href="https://sahilalfarib.tech/videos/feature-1.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/feature-2.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/feature-3.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/feature-4.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/feature-5.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/hero-1.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/hero-2.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/hero-3.mp4" />
-        <link rel="video" href="https://sahilalfarib.tech/videos/hero-4.mp4" />
+        <meta property="og:url" content="https://sahilalfarib.me" />
+        <link rel="icon" href="https://sahilalfarib.me/favicon.ico" type="image/x-icon" sizes="48x48" /> {/* Absolute URL */}
+        <link rel="icon" href="https://sahilalfarib.me/favicon.ico" sizes="192x192" /> {/* Android Chrome icon */}
+        <link rel="icon" href="https://sahilalfarib.me/favicon.ico" sizes="128x128" /> {/* Android Chrome fallback icon */}
+        <link rel="apple-touch-icon" href="https://sahilalfarib.me/favicon.ico" /> {/* iOS Apple Touch Icon */}
+        <link rel="video" href="https://sahilalfarib.me/videos/feature-1.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/feature-2.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/feature-3.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/feature-4.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/feature-5.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/hero-1.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/hero-2.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/hero-3.mp4" />
+        <link rel="video" href="https://sahilalfarib.me/videos/hero-4.mp4" />
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
